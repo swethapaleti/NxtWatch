@@ -15,12 +15,13 @@ import {
   Input,
   LoginBtn,
   Error,
+  UserTag,
 } from './styledComponents'
 
 class Login extends Component {
   state = {
-    username: '',
-    password: '',
+    username: 'rahul',
+    password: 'rahul@2021',
     errMsg: '',
     isPwdVisible: false,
   }
@@ -133,6 +134,9 @@ class Login extends Component {
                 <LoginBtn type="submit">Login</LoginBtn>
                 {errMsg && <Error>*{errMsg}</Error>}
               </FormStyle>
+              <UserTag isDark={isDark}>
+                *User credentials : Username : rahul , Password : rahul@2021
+              </UserTag>
             </LoginDiv>
           )
         }}

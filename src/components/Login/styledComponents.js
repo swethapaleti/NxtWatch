@@ -75,3 +75,9 @@ export const Error = styled.p`
   margin: 10px;
   font-size: 15px;
 `
+
+export const UserTag = styled.p`
+  margin: 10px;
+  font-size: 15px;
+  color: ${props => (props.isDark ? 'white' : 'black')};
+`

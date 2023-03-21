@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   background-color: ${props => (props.isDark ? '#181818' : 'white')};
-  height: 100vh;
+  min-height: 100vh;
 `
 
 export const VideoContainer = styled.div`
